@@ -158,7 +158,7 @@
                 padding: 50px 25px;
             }
             aside p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -179,10 +179,13 @@
                 display: flex;
                 flex-direction: column;
             }
-        }
-        @media only screen and (min-width: 767px) {
             main > div:not(:last-of-type) {
                 margin-right: 75px;
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            main {
+                padding: 0 100px 75px;
             }
         }
         main h2 {
@@ -190,13 +193,17 @@
             break-inside: avoid-column;
             color: var(--light);
             margin-bottom: 15px;
-            font-weight: 500;
+            font-weight: 400;
+        }
+        main h2 + p {
+            font-size: 1.75rem;
+            line-height: 1.8rem;
         }
         main p, main ul li {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             font-weight: 300;
         }
-        main p:not(:last-of-type) {
+        main h2 + p:not(:last-child) {
             margin-bottom: 15px;
         }
         @media only screen and (max-width: 767px) {
@@ -206,6 +213,9 @@
             main h2 {
                 font-size: 1.7rem;
                 margin-bottom: 10px;
+            }
+            main h2 + p {
+                font-size: 1.3rem;
             }
             main ul {
                 margin-bottom: 25px;
@@ -285,6 +295,7 @@
     <main>
         <div>
             <h2>Technology</h2>
+            <p>We stay at the forefront of web development with expertise in RWD, ADA, and more.</p>
             <ul>
                 <li>Responsive Web Development</li>
                 <li>Web Accessibility, ADA Compliance</li>
@@ -292,6 +303,7 @@
                 <li>Support &amp; Maintenance</li>
             </ul>
             <h2>Engineering</h2>
+            <p>Delve into cutting-edge engineering practices with us to stay on the cusp of robust system performance.</p>
             <ul>
                 <li>Real-Time WebSocket Platforms</li>
                 <li>Query Runtime Development</li>
@@ -299,6 +311,7 @@
                 <li>Middleware Architecture</li>
             </ul>
             <h2>Integration</h2>
+            <p>Unlock the power of seamless integration with our proficiencies in unified digital ecosystems.</p>
             <ul>
                 <li>Adobe Experience Manager</li>
                 <li>Adobe Experience Platform</li>
@@ -308,6 +321,7 @@
         </div>
         <div>
             <h2>Operations</h2>
+            <p>Optimize your efficiencies by leveraging our knowledge in modern operational technologies &amp; workflows.</p>
             <ul>
                 <li>FaaS Platforms &amp; Computing</li>
                 <li>Serverless Functions</li>
@@ -316,6 +330,7 @@
                 <li>&quot;Shift-left&quot; Testing</li>
             </ul>
             <h2>Infrastructure</h2>
+            <p>Let us build you a solid foundation with insights into scalable &amp; reliable infrastructures.</p>
             <ul>
                 <li>Dedicated &amp; Cloud Servers</li>
                 <li>Hypervisor/Virtualizer</li>
@@ -323,8 +338,8 @@
                 <li>Object Storage</li>
             </ul>
             <h2>AI Advisory</h2>
-            <p>This is where we disrupt the status quo and uncover new opportunities.</p>
-            <p>Welcome to the <a href="https://www.jupiterbrain.net" target="_blank">Jupiter Brain</a>.</p>
+            <p>Embark on a journey of disruption and innovation, uncovering new opportunities at the edge of technology.</p>
+            <p>Welcome to the <a href="https://www.jupiterbrain.net" target="_blank">Jupiter Brain</a>, where possibilities unfold.</p>
         </div>
     </main>
     <section>
